@@ -1,5 +1,7 @@
 require("dotenv").config();
 
+require("./globals.js");
+
 const Client = require("./lib/classes/Client.js");
 let client = new Client();
 
