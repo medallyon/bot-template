@@ -38,7 +38,7 @@
     },
     "globals": {
         "join": true,
-        "__rootdir": true,
+        "__basedir": true,
         "__libdir": true,
         "__webdir": true,
         "__datadir": true
