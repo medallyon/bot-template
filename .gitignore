@@ -1,3 +1,7 @@
+# Integrated Development Environments
+.vs
+.idea
+
 # Logs
 logs
 *.log
@@ -68,9 +72,8 @@ typings/
 # Yarn Integrity file
 .yarn-integrity
 
-# dotenv environment variables file
-.env
-.env.test
+# dotenv environment variables files
+.env*
 
 # parcel-bundler cache (https://parceljs.org/)
 .cache
@@ -103,5 +106,11 @@ dist
 # TernJS port file
 .tern-port
 
-# dot-env file
-.env
+# instance-specific data
+data/
+
+# STFP config
+sftp-config.json
+
+# Firebase Config
+firebase.config.json

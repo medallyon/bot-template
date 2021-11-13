@@ -1,13 +1,15 @@
-require("dotenv").config();
-
 require("./globals.js");
 
-const Client = require("./lib/classes/Client.js");
-let client = new Client();
+require("dotenv").config({
+	path: (process.argv[3] || process.env.NODE_ENV || "").toLowerCase().includes("prod")
+		? join(__dirname, ".env")
+		: join(__dirname, ".env.dev")
+});
+
+const DiscordClient = require(join(__libdir, "classes", "DiscordClient.js"));
+const client = new DiscordClient();
 
 client.login(process.env.BOT_TOKEN)
 	.catch(console.error);
 
-let server = require("./web");
-
-module.exports = { client, server };
+module.exports = { client };
