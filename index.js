@@ -1,10 +1,6 @@
 require("./globals.js");
 
-require("dotenv").config({
-	path: (process.argv[3] || process.env.NODE_ENV || "").toLowerCase().includes("prod")
-		? join(__dirname, ".env")
-		: join(__dirname, ".env.dev")
-});
+require("dotenv").config();
 
 const DiscordClient = require(join(__libdir, "classes", "DiscordClient.js"));
 const client = new DiscordClient();
