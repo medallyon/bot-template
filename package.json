@@ -1,13 +1,13 @@
 {
-  "name": "medallyon-bot-framework",
-  "version": "0.0.4",
-  "description": "",
+  "name": "medallyon-bot-template",
+  "version": "1.0.0",
+  "description": "This is a super-modular discord bot template. Create a bot in seconds with features such as slash commands and plug-able data managers.",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "https://github.com/medallyon",
   "license": "ISC",
   "dependencies": {
     "@discordjs/rest": "^0.1.0-canary.0",
