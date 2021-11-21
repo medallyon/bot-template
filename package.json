@@ -17,7 +17,8 @@
     "dotenv": "^10.0.0",
     "fs-extra": "^10.0.0",
     "moment": "^2.29.1",
-    "node-cache": "^5.1.2"
+    "node-cache": "^5.1.2",
+    "node-cleanup": "^2.1.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.16.0",
